@@ -23,24 +23,24 @@ const Actions = ({email, MobileNumber}) => {
 
 
 
-            <View style={styles.actionRow}>
-                <View style={styles.actionInfo}>
-                    <Text style={styles.actionLabel}>email</Text>
-                    <Text style={styles.actionBody}>{email}</Text>
-                </View>
+            {/*<View style={styles.actionRow}>*/}
+                {/*<View style={styles.actionInfo}>*/}
+                    {/*<Text style={styles.actionLabel}>email</Text>*/}
+                    {/*<Text style={styles.actionBody}>{email}</Text>*/}
+                {/*</View>*/}
 
-                <View style={styles.actionIcons}>
-                    <TouchableOpacity
-                        onPress={()=> null}>
-                        <Icon
-                        color={colors.link}
-                        size={ICON_SIZE}
-                        style={styles.actionIcon}
-                        name={Platform.OS === 'ios' ? 'ios-mail' : 'md-mail'}
-                        />
-                    </TouchableOpacity>
-                </View>
-            </View>
+                {/*<View style={styles.actionIcons}>*/}
+                    {/*<TouchableOpacity*/}
+                        {/*onPress={()=> null}>*/}
+                        {/*<Icon*/}
+                        {/*color={colors.link}*/}
+                        {/*size={ICON_SIZE}*/}
+                        {/*style={styles.actionIcon}*/}
+                        {/*name={Platform.OS === 'ios' ? 'ios-mail' : 'md-mail'}*/}
+                        {/*/>*/}
+                    {/*</TouchableOpacity>*/}
+                {/*</View>*/}
+            {/*</View>*/}
 
 
 

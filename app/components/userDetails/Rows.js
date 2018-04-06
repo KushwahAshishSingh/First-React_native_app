@@ -5,7 +5,7 @@ import styles, {ICON_SIZE} from './styles';
 import colors from '../../data/color';
 
 
-  const Rows = ({ label, body, actions = [] })=>{
+  const Rows = ({ label, body, actions=[] })=>{
     return(
         <View style={styles.actionRow}>
             <View style={styles.actionInfo}>
@@ -15,7 +15,7 @@ import colors from '../../data/color';
 
             <View style={styles.actionIcons}>
 
-                {actions.map((action, index) =>{
+                {actions.map((action, index) =>(
                     <TouchableOpacity
                         onPress={action.onPress}
                         key={index}
@@ -28,7 +28,7 @@ import colors from '../../data/color';
                             name={Platform.OS === 'ios' ? action.iosIcon : action.androidIcon}
                         />
                     </TouchableOpacity>
-                })}
+                ))}
 
             </View>
         </View>
