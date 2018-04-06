@@ -8,10 +8,12 @@ import colors from '../../data/color';
 
 
 const ListItem = ({contact, onPress}) =>{
+
     const name = `${contact.name}`
-    const scores = `${contact.scores.score} ${contact.scores.type}`
+    const scores = `${contact.scores[0].score}`+ "  " +`${contact.scores[0].type}`
+    const scores1 = `${contact.scores[1].score}`+ "  " +`${contact.scores[1].type}`
+    const scores2 = `${contact.scores[2].score}`+ "  " +`${contact.scores[2].type}`
     const id = `${contact._id}`
-   //  const scoress = `${contact.scores.score1}`
 
 
 
@@ -28,10 +30,10 @@ const ListItem = ({contact, onPress}) =>{
 
                     />
                 <View>
-                    <Text>{name}</Text>
-                        <Text>{id}</Text>
-                    <Text>{scores}</Text>
-
+                    <Text>ID :  {id}</Text>
+                    <Text>NAME :  {name}</Text>
+                  <View style={{flex: 1, flexDirection:'column-reverse'}}> <Text>{scores}</Text><Text> {scores1} </Text> <Text>{scores2}</Text>
+                  </View>
                 </View>
                  <View style={styles.ChevronContainer}>
                      <Icon
